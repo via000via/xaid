@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X顧問 / 運用代行サービス｜実績で語る、圧倒的な拡散力</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Shippori+Mincho:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700&family=Archivo:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#101d2e;
+    --navy:#132840;
+    --navy-2:#1d3a5c;
+    --navy-soft:#2a4a6e;
+    --gold:#c69329;
+    --gold-2:#d9ab3f;
+    --gold-soft:#f3e4bd;
+    --paper:#f6f7f9;
+    --paper-2:#eef1f5;
+    --white:#ffffff;
+    --line:#e4e8ee;
+    --muted:#5c6b7e;
+    --shadow:0 18px 50px -24px rgba(16,29,46,.35);
+    --shadow-sm:0 8px 24px -14px rgba(16,29,46,.3);
+    --r:18px;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans JP",system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.disp{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;}
+  .num{font-family:"Archivo","Zen Kaku Gothic New",sans-serif;font-weight:900;letter-spacing:-.01em;font-feature-settings:"tnum";}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;
+    font-size:.78rem;font-weight:700;letter-spacing:.14em;
+    color:var(--gold);text-transform:uppercase;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--gold);display:inline-block}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif;
+    padding:16px 30px;border-radius:100px;cursor:pointer;border:none;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    font-size:1rem;
+  }
+  .btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#1a1405;box-shadow:0 12px 26px -12px rgba(198,147,41,.75)}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 34px -12px rgba(198,147,41,.85)}
+  .btn-ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.4)}
+  .btn-ghost:hover{background:rgba(255,255,255,.08);transform:translateY(-2px)}
+  .btn svg{width:16px;height:16px}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(255,255,255,.82);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:900;font-family:"Zen Kaku Gothic New",sans-serif;font-size:1.05rem}
+  .brand .x-mark{
+    width:34px;height:34px;border-radius:9px;background:var(--ink);color:#fff;
+    display:grid;place-items:center;font-weight:900;font-size:1.15rem;flex:none;
+  }
+  .brand small{display:block;font-size:.62rem;font-weight:500;color:var(--muted);letter-spacing:.08em;margin-top:-3px}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{font-size:.9rem;font-weight:500;color:var(--muted);transition:color .15s}
+  .nav-links a:hover{color:var(--ink)}
+  .nav .btn{padding:11px 22px;font-size:.9rem}
+  .nav-cta-wrap{display:flex;align-items:center;gap:22px}
+  @media(max-width:860px){.nav-links{display:none}}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;color:#eaf0f8;overflow:hidden;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(198,147,41,.22), transparent 60%),
+      radial-gradient(900px 500px at 0% 110%, rgba(45,90,140,.5), transparent 55%),
+      linear-gradient(160deg,#0c1826 0%, #132840 55%, #16324f 100%);
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+    background-size:46px 46px;mask-image:radial-gradient(900px 500px at 70% 30%,#000,transparent 75%);
+  }
+  .hero .wrap{position:relative;z-index:2;padding-top:88px;padding-bottom:96px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.3rem,5.2vw,3.9rem);font-weight:900;line-height:1.24;letter-spacing:.01em}
+  .hero h1 .hl{
+    background:linear-gradient(135deg,#f6d879,var(--gold-2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p.lead{margin-top:22px;font-size:1.06rem;color:#b8c6d8;max-width:34em}
+  .hero-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+  .hero-note{margin-top:20px;font-size:.8rem;color:#8ea0b6}
+
+  .proof-card{
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);
+    border-radius:22px;padding:30px;backdrop-filter:blur(6px);
+    box-shadow:0 30px 70px -30px rgba(0,0,0,.6);
+  }
+  .proof-card .pc-label{font-size:.82rem;color:#9fb1c7;font-weight:500;letter-spacing:.02em}
+  .proof-card .pc-head{display:flex;align-items:center;gap:8px;margin-bottom:22px;font-weight:700;font-size:.9rem;color:#dbe6f2}
+  .proof-card .pc-head .dot{width:8px;height:8px;border-radius:50%;background:#3fb37f;box-shadow:0 0 0 4px rgba(63,179,127,.2)}
+  .pc-rows{display:grid;gap:18px}
+  .pc-row{display:flex;align-items:baseline;justify-content:space-between;padding-bottom:16px;border-bottom:1px dashed rgba(255,255,255,.14)}
+  .pc-row:last-child{border-bottom:none;padding-bottom:0}
+  .pc-val{display:flex;align-items:baseline;gap:3px}
+  .pc-val .n{font-size:2rem;color:#fff}
+  .pc-val .u{font-size:.95rem;font-weight:700;color:var(--gold-2);font-family:"Zen Kaku Gothic New"}
+  .pc-delta{font-size:.72rem;color:#3fb37f;font-weight:700}
+
+  /* ---------- section base ---------- */
+  section{position:relative}
+  .band{padding:96px 0}
+  .band-paper{background:var(--paper)}
+  .sec-head{max-width:660px;margin-bottom:52px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:900;line-height:1.32;margin-top:14px;letter-spacing:.01em}
+  .sec-head h2 .u{color:var(--gold);position:relative}
+  .sec-head p{margin-top:16px;color:var(--muted);font-size:1rem}
+
+  /* ---------- results big numbers ---------- */
+  .results{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .result-card{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+    padding:34px 30px;position:relative;overflow:hidden;box-shadow:var(--shadow-sm);
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .result-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .result-card::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--gold),var(--gold-2))}
+  .rc-icon{width:46px;height:46px;border-radius:12px;background:var(--paper-2);display:grid;place-items:center;margin-bottom:20px;color:var(--navy-2)}
+  .rc-icon svg{width:24px;height:24px}
+  .rc-label{font-weight:700;font-size:.98rem;color:var(--navy-2);font-family:"Zen Kaku Gothic New"}
+  .rc-fig{display:flex;align-items:baseline;gap:4px;margin:8px 0 6px}
+  .rc-fig .n{font-size:3.1rem;color:var(--ink);line-height:1}
+  .rc-fig .u{font-size:1.15rem;font-weight:900;color:var(--navy-2);font-family:"Zen Kaku Gothic New"}
+  .rc-sub{font-size:.85rem;color:var(--muted)}
+  .results-note{text-align:center;margin-top:30px;font-size:.82rem;color:var(--muted)}
+
+  /* ---------- viral cards ---------- */
+  .viral{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+  .viral-card{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+    padding:30px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;
+  }
+  .vc-top{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+  .vc-kicker{font-size:.82rem;font-weight:700;color:var(--muted)}
+  .vc-fig{display:flex;align-items:baseline;gap:4px}
+  .vc-fig .n{font-size:2.7rem;color:var(--ink)}
+  .vc-fig .u{font-size:1rem;font-weight:900;color:var(--gold);font-family:"Zen Kaku Gothic New"}
+  .vc-post{
+    margin-top:20px;border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--paper);
+  }
+  .vc-user{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+  .vc-ava{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#2a4a6e,#16324f);color:#fff;display:grid;place-items:center;font-weight:900;font-size:.9rem}
+  .vc-name{font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:5px}
+  .vc-verify{width:16px;height:16px;color:#1d9bf0}
+  .vc-handle{font-size:.78rem;color:var(--muted)}
+  .vc-text{font-size:.88rem;color:#2b3a4d;line-height:1.7}
+  .vc-stats{display:flex;gap:18px;margin-top:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);font-weight:500}
+  .vc-stats b{color:var(--ink);font-family:"Archivo";font-weight:800}
+
+  /* ---------- reach strip ---------- */
+  .reach{
+    background:linear-gradient(150deg,#12283f,#1b3a5b);border-radius:26px;padding:52px 46px;color:#eaf1f9;
+    box-shadow:var(--shadow);position:relative;overflow:hidden;
+  }
+  .reach::before{content:"";position:absolute;right:-60px;top:-60px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(198,147,41,.28),transparent 70%)}
+  .reach-grid{display:grid;grid-template-columns:1.1fr repeat(3,1fr);gap:30px;align-items:center;position:relative;z-index:2}
+  .reach-lead h3{font-size:1.5rem;font-weight:900;line-height:1.4}
+  .reach-lead .u{color:var(--gold-2)}
+  .reach-lead p{margin-top:10px;font-size:.86rem;color:#a9bbd0}
+  .reach-stat{text-align:center;padding:0 6px;border-left:1px solid rgba(255,255,255,.14)}
+  .reach-stat .rl{font-size:.8rem;color:#a9bbd0;margin-bottom:6px;font-weight:500}
+  .reach-stat .rn{font-size:2.2rem;color:#fff}
+  .reach-stat .ru{font-size:.9rem;color:var(--gold-2);font-weight:900;font-family:"Zen Kaku Gothic New"}
+  @media(max-width:820px){.reach-grid{grid-template-columns:1fr 1fr;gap:22px}.reach-lead{grid-column:1/-1}.reach-stat{border-left:none}}
+
+  /* ---------- testimonials ---------- */
+  .voices{columns:3;column-gap:22px}
+  .voice{
+    break-inside:avoid;margin-bottom:22px;background:var(--white);
+    border:1px solid var(--line);border-radius:16px;padding:22px 22px 20px;
+    box-shadow:var(--shadow-sm);position:relative;
+  }
+  .voice-head{display:flex;align-items:center;gap:11px;margin-bottom:13px}
+  .voice-ava{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#2a4a6e,#16324f);color:#fff;display:grid;place-items:center;font-weight:900;font-size:.95rem;flex:none}
+  .voice-meta .vn{font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:5px;color:var(--ink)}
+  .voice-meta .vn svg{width:15px;height:15px;color:#1d9bf0}
+  .voice-meta .vh{font-size:.76rem;color:var(--muted)}
+  .voice-body{font-size:.9rem;line-height:1.8;color:#33445a}
+  .voice-body .hl-metric{background:linear-gradient(transparent 60%,var(--gold-soft) 60%);font-weight:700;color:var(--ink)}
+  .voice-tag{display:inline-block;margin-top:12px;font-size:.72rem;font-weight:700;color:var(--gold);background:var(--gold-soft);padding:4px 11px;border-radius:100px}
+  @media(max-width:900px){.voices{columns:2}}
+  @media(max-width:600px){.voices{columns:1}}
+
+  /* subscription CTA */
+  .sub-cta{
+    margin-top:56px;border-radius:24px;padding:48px 44px;text-align:center;position:relative;overflow:hidden;
+    background:linear-gradient(150deg,#12283f,#1b3a5b);color:#eaf1f9;box-shadow:var(--shadow);
+  }
+  .sub-cta::before{content:"";position:absolute;left:-70px;bottom:-70px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(198,147,41,.22),transparent 70%)}
+  .sub-cta-inner{position:relative;z-index:2}
+  .sub-cta .badge{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:700;letter-spacing:.06em;color:var(--gold-2);border:1px solid rgba(230,204,140,.4);border-radius:100px;padding:7px 18px;margin-bottom:20px}
+  .sub-cta h3{font-size:clamp(1.5rem,3.4vw,2.2rem);font-weight:900;line-height:1.4;font-family:"Zen Kaku Gothic New"}
+  .sub-cta h3 .u{color:var(--gold-2)}
+  .sub-cta p{margin:16px auto 30px;max-width:36em;color:#b8c6d8;font-size:.96rem}
+  .btn-x{background:#fff;color:#0f1419;box-shadow:0 14px 30px -14px rgba(0,0,0,.6);font-size:1.05rem;padding:17px 36px}
+  .btn-x:hover{transform:translateY(-2px);background:#f2f2f2}
+  .btn-x .xlogo{font-size:1.15rem;font-weight:900}
+  .sub-note{margin-top:16px;font-size:.78rem;color:#8ea0b6}
+
+  /* ---------- pricing ---------- */
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+  .plan{
+    background:var(--white);border:1px solid var(--line);border-radius:20px;
+    padding:34px 28px;display:flex;flex-direction:column;position:relative;
+    box-shadow:var(--shadow-sm);transition:transform .25s ease;
+  }
+  .plan:hover{transform:translateY(-4px)}
+  .plan.feat{border:2px solid var(--gold);box-shadow:0 30px 60px -28px rgba(198,147,41,.55);transform:scale(1.02)}
+  .plan.feat:hover{transform:scale(1.02) translateY(-4px)}
+  .plan-badge{
+    position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+    background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#1a1405;
+    font-weight:700;font-size:.82rem;padding:6px 20px;border-radius:100px;font-family:"Zen Kaku Gothic New";white-space:nowrap;
+    box-shadow:0 10px 22px -10px rgba(198,147,41,.7);
+  }
+  .plan-tag{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.82rem;color:var(--muted)}
+  .plan-tag .pn{width:24px;height:24px;border-radius:50%;background:var(--paper-2);display:grid;place-items:center;font-size:.72rem;font-weight:900;color:var(--navy-2)}
+  .plan.feat .plan-tag .pn{background:var(--gold-soft);color:var(--gold)}
+  .plan h3{font-size:1.35rem;font-weight:900;margin:10px 0 18px}
+  .plan-price{display:flex;align-items:baseline;gap:4px;padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:22px}
+  .plan-price .pre{font-size:.9rem;font-weight:700;color:var(--muted)}
+  .plan-price .n{font-size:3rem;color:var(--ink)}
+  .plan-price .u{font-size:1.1rem;font-weight:900;font-family:"Zen Kaku Gothic New";color:var(--navy-2)}
+  .plan.feat .plan-price .n{color:var(--gold)}
+  .feat-list{list-style:none;display:grid;gap:12px;margin-bottom:24px;flex:1}
+  .feat-list li{display:flex;gap:10px;font-size:.9rem;align-items:flex-start;color:#33445a}
+  .feat-list .ck{flex:none;width:20px;height:20px;border-radius:50%;background:var(--paper-2);display:grid;place-items:center;margin-top:2px}
+  .feat-list .ck svg{width:12px;height:12px;color:var(--navy-2)}
+  .plan.feat .feat-list .ck{background:var(--gold-soft)}
+  .plan.feat .feat-list .ck svg{color:var(--gold)}
+  .feat-list li.off{color:#9aa7b6}
+  .feat-list li.off .ck{background:#f0f1f3}.feat-list li.off .ck svg{color:#b6bfc9}
+  .plan .btn{width:100%}
+  .plan:not(.feat) .btn{background:var(--paper-2);color:var(--navy);box-shadow:none}
+  .plan:not(.feat) .btn:hover{background:var(--paper);transform:translateY(-2px)}
+  .plan-init{background:var(--paper);border-radius:12px;padding:14px 16px;margin-bottom:22px;font-size:.8rem;color:var(--muted)}
+  .plan-init b{color:var(--ink);font-family:"Zen Kaku Gothic New";font-weight:900;font-size:1rem}
+
+  .common{margin-top:34px;background:var(--navy);border-radius:20px;padding:34px 38px;color:#e7eef7;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center}
+  .common .ci{font-weight:900;font-size:1.05rem;color:#fff;font-family:"Zen Kaku Gothic New"}
+  .common .ci span{display:block;font-size:.78rem;color:var(--gold-2);font-weight:700;margin-bottom:4px}
+  .common-items{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .common-item{font-size:.85rem;display:flex;gap:8px;align-items:flex-start;color:#c8d5e4}
+  .common-item svg{width:16px;height:16px;color:var(--gold-2);flex:none;margin-top:3px}
+  @media(max-width:720px){.common{grid-template-columns:1fr}.common-items{grid-template-columns:1fr 1fr}}
+
+  .pricing-note{text-align:center;margin-top:24px;font-size:.82rem;color:var(--muted)}
+
+  /* ---------- flow ---------- */
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step}
+  .flow-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px 22px;position:relative}
+  .flow-card .st{font-family:"Archivo";font-weight:900;font-size:1rem;color:var(--gold);letter-spacing:.05em}
+  .flow-card h4{font-size:1.05rem;font-weight:900;margin:8px 0 8px;font-family:"Zen Kaku Gothic New"}
+  .flow-card p{font-size:.85rem;color:var(--muted)}
+
+  /* ---------- final cta ---------- */
+  .final{
+    color:#eaf1f9;text-align:center;position:relative;overflow:hidden;
+    background:radial-gradient(900px 500px at 50% -20%, rgba(198,147,41,.25), transparent 60%),linear-gradient(160deg,#0c1826,#16324f);
+  }
+  .final .wrap{position:relative;z-index:2;padding:96px 24px}
+  .final h2{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:900;line-height:1.4}
+  .final h2 .u{color:var(--gold-2)}
+  .final p{margin:20px auto 0;max-width:40em;color:#b8c6d8}
+  .final .hero-cta{justify-content:center;margin-top:36px}
+
+  /* final: trust points + meeting banner */
+  .final-kicker{display:inline-block;border:1px solid rgba(230,204,140,.5);border-radius:8px;padding:8px 22px;font-weight:700;font-size:.9rem;color:var(--gold-2);letter-spacing:.08em;margin-bottom:26px}
+  .final-lead{font-size:clamp(1.1rem,2.4vw,1.4rem);font-weight:700;color:#dbe6f2;font-family:"Zen Kaku Gothic New"}
+  .final-serif{
+    font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(2.4rem,6.5vw,4.6rem);line-height:1.2;margin:6px 0 22px;
+    background:linear-gradient(135deg,#f7e4a6 0%,#e6c268 45%,#c69329 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    letter-spacing:.02em;
+  }
+  .final-sub{display:flex;align-items:center;justify-content:center;gap:16px;color:#b8c6d8;font-size:.98rem;font-weight:500;margin-bottom:52px}
+  .final-sub::before,.final-sub::after{content:"";width:34px;height:1px;background:rgba(184,198,216,.5)}
+  .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:900px;margin:0 auto 52px}
+  .trust-item{padding:0 10px}
+  .trust-ico{width:60px;height:60px;border-radius:50%;border:1px solid rgba(230,204,140,.4);display:grid;place-items:center;margin:0 auto 16px;color:var(--gold-2);background:rgba(230,204,140,.06)}
+  .trust-ico svg{width:26px;height:26px}
+  .trust-item h4{font-size:1.1rem;font-weight:900;color:#fff;margin-bottom:8px;font-family:"Zen Kaku Gothic New"}
+  .trust-item p{font-size:.85rem;color:#a9bbd0;line-height:1.7}
+  .meeting-banner{
+    display:flex;align-items:center;gap:26px;max-width:900px;margin:0 auto;
+    background:linear-gradient(120deg,rgba(255,255,255,.07),rgba(230,204,140,.06));
+    border:1px solid rgba(230,204,140,.35);border-radius:20px;padding:26px 34px;text-align:left;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .meeting-banner:hover{transform:translateY(-3px);box-shadow:0 24px 50px -24px rgba(0,0,0,.6)}
+  .mb-ico{width:58px;height:58px;border-radius:14px;background:rgba(230,204,140,.12);display:grid;place-items:center;flex:none;color:var(--gold-2)}
+  .mb-ico svg{width:28px;height:28px}
+  .mb-text{flex:1}
+  .mb-text .mb-small{font-size:.9rem;color:#b8c6d8;font-weight:500;margin-bottom:2px}
+  .mb-text .mb-big{font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:900;color:#fff;font-family:"Zen Kaku Gothic New"}
+  .mb-text .mb-big em{font-style:normal;color:var(--gold-2)}
+  .mb-arrow{color:var(--gold-2);flex:none}
+  .mb-arrow svg{width:24px;height:24px}
+  @media(max-width:720px){
+    .trust{grid-template-columns:1fr;gap:32px}
+    .meeting-banner{flex-direction:column;text-align:center;gap:16px;padding:26px 22px}
+    .final-sub{flex-direction:column;gap:8px}.final-sub::before,.final-sub::after{width:60px}
+  }
+
+  /* ---------- footer ---------- */
+  footer{background:var(--ink);color:#8fa0b4;padding:44px 0;font-size:.82rem}
+  .foot-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .foot-brand{color:#fff;font-weight:900;font-family:"Zen Kaku Gothic New";display:flex;align-items:center;gap:10px;font-size:1rem}
+  .foot-note{margin-top:20px;line-height:1.9;font-size:.76rem}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:40px}
+    .results,.viral,.plans,.flow{grid-template-columns:1fr}
+    .plan.feat{transform:none}.plan.feat:hover{transform:translateY(-4px)}
+    .band{padding:68px 0}
+    .common-items{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:560px){
+    .flow{grid-template-columns:1fr}
+    .viral{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <span class="x-mark">𝕏</span>
+      <span>X運用パートナー<small>顧問 / 運用代行サービス</small></span>
+    </div>
+    <nav class="nav-cta-wrap">
+      <a href="https://forms.gle/dRZX3NGkfNPU4LZD9" target="_blank" rel="noopener" class="btn btn-gold">無料相談する</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <span class="eyebrow">𝕏 顧問 / 運用代行サービス</span>
+        <h1>貴社に、<span class="hl">再現性と<br>内製化</span>を実現させる。</h1>
+        <p class="lead">企画・執筆・投稿・リプライ・分析まで一気通貫で代行。実際のアカウントで<b>3ヶ月・フォロワー+10,000人</b>、<b>累計3億インプレッション</b>を生み出した運用ノウハウを、あなたのアカウントに。</p>
+        <div class="hero-cta">
+          <a href="https://forms.gle/dRZX3NGkfNPU4LZD9" target="_blank" rel="noopener" class="btn btn-gold">
+            無料で相談する
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <p class="hero-note">※ 掲載の数値はすべて実際のアカウント実績です</p>
+      </div>
+
+      <!-- proof card mimics X analytics -->
+      <div class="proof-card reveal in">
+        <div class="pc-head"><span class="dot"></span>アカウント実績サマリー<span style="margin-left:auto;font-size:.74rem;color:#8ea0b6;font-weight:500">直近3ヶ月</span></div>
+        <div class="pc-rows">
+          <div class="pc-row">
+            <span class="pc-label">収益</span>
+            <div class="pc-val"><span class="n num" data-count="160" data-suffix="">0</span><span class="u">万円</span></div>
+          </div>
+          <div class="pc-row">
+            <span class="pc-label">フォロワー増加</span>
+            <div class="pc-val"><span class="u" style="color:#3fb37f">+</span><span class="n num" data-count="10000" data-comma="1">0</span><span class="u">人</span></div>
+          </div>
+          <div class="pc-row">
+            <span class="pc-label">累計インプレッション</span>
+            <div class="pc-val"><span class="n num" data-count="3">0</span><span class="u">億回</span></div>
+          </div>
+          <div class="pc-row">
+            <span class="pc-label">エンゲージメント</span>
+            <div class="pc-val"><span class="n num" data-count="1.4" data-decimals="1">0</span><span class="u">M</span> <span class="pc-delta">↑3%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIRAL -->
+<section class="band band-paper">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Viral Track Record</span>
+      <h2>X記事が初投稿で<br><span class="u">2,000万インプ超え</span>。</h2>
+      <p>感覚頼みではなく、伸びる型（フォーマット・構成・タイミング）を分析。だから初動から大きなインパクトを生み出せます。</p>
+    </div>
+    <div class="viral">
+      <div class="viral-card reveal">
+        <div class="vc-top">
+          <span class="vc-kicker">𝕏 記事 処女作</span>
+          <div class="vc-fig"><span class="n num" data-count="2034" data-comma="1">0</span><span class="u">万インプ</span></div>
+        </div>
+        <div class="vc-post">
+          <div class="vc-user">
+            <div class="vc-ava">V</div>
+            <div>
+              <div class="vc-name">VIA <svg class="vc-verify" viewBox="0 0 22 22" fill="currentColor"><path d="M20.4 11l-1.8-2.1.3-2.8-2.7-.6L14.7 3 12 4.1 9.3 3 7.8 5.5l-2.7.6.3 2.8L3.6 11l1.8 2.1-.3 2.8 2.7.6L9.3 19l2.7-1.1L14.7 19l1.5-2.5 2.7-.6-.3-2.8L20.4 11zM9.8 14.6l-3-3 1.1-1.1 1.9 1.9 4.2-4.2 1.1 1.1-5.3 5.3z"/></svg></div>
+              <div class="vc-handle">@Via00Via</div>
+            </div>
+          </div>
+          <p class="vc-text">「35歳で知る"取り返せない時間"の正体」— 若くもあり、もう若くもない。その微妙な立ち位置を言語化した長文記事が初投稿から爆発的に拡散。</p>
+          <div class="vc-stats"><span>💬 <b>133</b></span><span>🔁 <b>4,722</b></span><span>♡ <b>2.8万</b></span><span>👁 <b>2,034万</b></span></div>
+        </div>
+      </div>
+      <div class="viral-card reveal">
+        <div class="vc-top">
+          <span class="vc-kicker">最高インプレッション</span>
+          <div class="vc-fig"><span class="n num" data-count="3491" data-comma="1">0</span><span class="u">万インプ</span></div>
+        </div>
+        <div class="vc-post">
+          <div class="vc-user">
+            <div class="vc-ava">V</div>
+            <div>
+              <div class="vc-name">VIA <svg class="vc-verify" viewBox="0 0 22 22" fill="currentColor"><path d="M20.4 11l-1.8-2.1.3-2.8-2.7-.6L14.7 3 12 4.1 9.3 3 7.8 5.5l-2.7.6.3 2.8L3.6 11l1.8 2.1-.3 2.8 2.7.6L9.3 19l2.7-1.1L14.7 19l1.5-2.5 2.7-.6-.3-2.8L20.4 11zM9.8 14.6l-3-3 1.1-1.1 1.9 1.9 4.2-4.2 1.1 1.1-5.3 5.3z"/></svg></div>
+              <div class="vc-handle">@Via00Via</div>
+            </div>
+          </div>
+          <p class="vc-text">「アルファードを買うのを辞めて精米機を買った自分を褒めたい」— 実体験×価値観を掛け合わせた投稿が共感を呼び、約3,500万インプの大バズを記録。</p>
+          <div class="vc-stats"><span>💬 <b>617</b></span><span>🔁 <b>4,868</b></span><span>♡ <b>4.1万</b></span><span>👁 <b>3,491万</b></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REACH -->
+<section class="band" id="reach">
+  <div class="wrap">
+    <div class="reach reveal">
+      <div class="reach-grid">
+        <div class="reach-lead">
+          <h3>圧倒的な拡散力で、<br>あなたの投稿を<span class="u">一気に広げる。</span></h3>
+          <p>質の高いコンテンツと戦略的な運用で、多くのユーザーに届く。<br>直近15日（2026/07/02〜07/16）の実績。</p>
+        </div>
+        <div class="reach-stat">
+          <div class="rl">インプレッション合計</div>
+          <div><span class="rn num" data-count="2284" data-comma="1">0</span><span class="ru">万</span></div>
+        </div>
+        <div class="reach-stat">
+          <div class="rl">ブックマーク合計</div>
+          <div><span class="rn num" data-count="29671" data-comma="1">0</span></div>
+        </div>
+        <div class="reach-stat">
+          <div class="rl">いいね合計</div>
+          <div><span class="rn num" data-count="43391" data-comma="1">0</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOICES / TESTIMONIALS -->
+<section class="band" id="voices">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" style="justify-content:center">Client Voices</span>
+      <h2>数字だけじゃない。<br><span class="u">利用者のリアルな声。</span></h2>
+      <p>運用サポート・サブスクをご利用いただいた方から届いた、実際のご感想です。</p>
+    </div>
+
+    <div class="voices">
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">R</div>
+          <div class="voice-meta"><div class="vn">R 様 <svg viewBox="0 0 22 22" fill="currentColor"><path d="M20.4 11l-1.8-2.1.3-2.8-2.7-.6L14.7 3 12 4.1 9.3 3 7.8 5.5l-2.7.6.3 2.8L3.6 11l1.8 2.1-.3 2.8 2.7.6L9.3 19l2.7-1.1L14.7 19l1.5-2.5 2.7-.6-.3-2.8L20.4 11zM9.8 14.6l-3-3 1.1-1.1 1.9 1.9 4.2-4.2 1.1 1.1-5.3 5.3z"/></svg></div><div class="vh">@****</div></div>
+        </div>
+        <p class="voice-body">自分だけでは1万インプも行かないのに、<span class="hl-metric">引用いただいた途端、100万インプ</span>でした。本当にありがとうございます。</p>
+        <span class="voice-tag">100万インプ達成</span>
+      </div>
+
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">K</div>
+          <div class="voice-meta"><div class="vn">K 様</div><div class="vh">@****</div></div>
+        </div>
+        <p class="voice-body">おかげさまで、昨日の投稿がバズって<span class="hl-metric">初の10万インプ達成</span>することができました！いつも引用していただきありがとうございます😭</p>
+        <span class="voice-tag">初の10万インプ</span>
+      </div>
+
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">S</div>
+          <div class="voice-meta"><div class="vn">S 様</div><div class="vh">@****</div></div>
+        </div>
+        <p class="voice-body">6月にフォロワー1000人を目標にしていましたが、<span class="hl-metric">おかげさまで3000人を超える</span>ことができました。今後もXは続けていきます、ありがとうございました！</p>
+        <span class="voice-tag">フォロワー3,000人超</span>
+      </div>
+
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">Y</div>
+          <div class="voice-meta"><div class="vn">Y 様</div><div class="vh">@****</div></div>
+        </div>
+        <p class="voice-body">収益化達成しました！ありがとうございます！！！</p>
+        <span class="voice-tag">収益化達成</span>
+      </div>
+
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">T</div>
+          <div class="voice-meta"><div class="vn">T 様</div><div class="vh">@****</div></div>
+        </div>
+        <p class="voice-body">1700超えました！本当に出会ってなかったら<span class="hl-metric">このスピードは絶対無理だった</span>ので、感謝しております！！</p>
+        <span class="voice-tag">フォロワー1,700超</span>
+      </div>
+
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">M</div>
+          <div class="voice-meta"><div class="vn">M 様</div><div class="vh">@****</div></div>
+        </div>
+        <p class="voice-body">おかげさまで1000まで見えてきました！このスピードで来られたのは<span class="hl-metric">サブスクに入ったから</span>です。本当に感謝しています！！</p>
+        <span class="voice-tag">サブスク利用</span>
+      </div>
+
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">H</div>
+          <div class="voice-meta"><div class="vn">H 様</div><div class="vh">@****</div></div>
+        </div>
+        <p class="voice-body">220万インプ達成の裏側として、サブスクで投稿の添削や拡散にご協力いただいた、と記事に書かせていただきたいです！</p>
+        <span class="voice-tag">220万インプ達成</span>
+      </div>
+
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">N</div>
+          <div class="voice-meta"><div class="vn">N 様</div><div class="vh">@****</div></div>
+        </div>
+        <p class="voice-body">サブスク入ってから、<span class="hl-metric">明確に変わりだしました</span>😂 本当にありがとうございます。</p>
+      </div>
+
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">A</div>
+          <div class="voice-meta"><div class="vn">A 様</div><div class="vh">@****</div></div>
+        </div>
+        <p class="voice-body">私の記事の中ではブクマが多く伸びつつあります！援護射撃をきっかけにグッと伸ばしていきたいです！笑</p>
+      </div>
+
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">D</div>
+          <div class="voice-meta"><div class="vn">D 様</div><div class="vh">@****</div></div>
+        </div>
+        <p class="voice-body">動画引用のおかげで急に伸びてきました🥹 ありがとうございます！！どこまで伸びていくか楽しみです！！！</p>
+      </div>
+    </div>
+    <p class="results-note" style="margin-top:8px">※ 実際にいただいたご感想を、個人が特定されない形で掲載しています。</p>
+
+    <!-- subscription CTA -->
+    <div class="sub-cta reveal">
+      <div class="sub-cta-inner">
+        <span class="badge">𝕏 Creator Subscriptions</span>
+        <h3>Xサブスクでも、<br>この<span class="u">拡散力</span>を体験できます。</h3>
+        <p>「まずは運用代行の前に試してみたい」という方へ。サブスク会員には、投稿の添削や引用リポストによる拡散サポートを提供。実際に多くの会員がフォロワー・インプレッションを伸ばしています。</p>
+        <a class="btn btn-x" href="https://x.com/Via00Via/creator-subscriptions/subscribe" target="_blank" rel="noopener">
+          <span class="xlogo">𝕏</span> サブスクはこちら
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="sub-note">タップするとXのサブスクリプション登録ページへ移動します</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="band band-paper" id="plans">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" style="justify-content:center">Pricing</span>
+      <h2>月約60本は全プラン共通。<br>違いは<span class="u">“リプライ対応・分析・カスタマイズ”</span>。</h2>
+      <p>目的とフェーズに合わせて選べる3プラン。すべてに初期構築・月次ヒアリングが含まれます。</p>
+    </div>
+
+    <div class="plans">
+      <!-- plan 1 -->
+      <div class="plan reveal">
+        <span class="plan-tag"><span class="pn">1</span>ポスト作成プラン</span>
+        <h3>まずは発信量を作る</h3>
+        <div class="plan-price"><span class="pre">月額</span><span class="n num" data-count="10">10</span><span class="u">万円</span></div>
+        <ul class="feat-list">
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>X顧問（月1回MTG）</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>ポスト作成代行（月約60本）</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>月次ネタ拡張ヒアリング</li>
+          <li class="off"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg></span>リプライ対応</li>
+          <li class="off"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg></span>データ分析・改善（PDCA）</li>
+        </ul>
+        <div class="plan-init">初期費用 <b>10万円</b>（AI運用環境構築・アカウント/競合分析・運用方針設計・KPI設計 込み）</div>
+        <a href="https://forms.gle/dRZX3NGkfNPU4LZD9" target="_blank" rel="noopener" class="btn">このプランで相談</a>
+      </div>
+
+      <!-- plan 2 featured -->
+      <div class="plan feat reveal">
+        <span class="plan-badge">★ おすすめ</span>
+        <span class="plan-tag"><span class="pn">2</span>運用強化プラン</span>
+        <h3>分析まで一気通貫で伴走</h3>
+        <div class="plan-price"><span class="pre">月額</span><span class="n num" data-count="15">15</span><span class="u">万円</span></div>
+        <ul class="feat-list">
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>X顧問（月1回MTG）</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>ポスト作成代行（月約60本）</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>リプライ対応（20件／日）</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>月次ネタ拡張ヒアリング</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>データ分析・改善（PDCA）</li>
+        </ul>
+        <div class="plan-init">初期費用 <b>10万円</b>（AI運用環境構築・アカウント/競合分析・運用方針設計・KPI設計 込み）</div>
+        <a href="https://forms.gle/dRZX3NGkfNPU4LZD9" target="_blank" rel="noopener" class="btn btn-gold">このプランで相談</a>
+      </div>
+
+      <!-- plan 3 -->
+      <div class="plan reveal">
+        <span class="plan-tag"><span class="pn">3</span>プレミアムプラン</span>
+        <h3>制作まで丸ごと任せる</h3>
+        <div class="plan-price"><span class="pre">月額</span><span class="n num" data-count="20">20</span><span class="u">万円</span></div>
+        <ul class="feat-list">
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>運用強化プランの全内容</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>予約投稿・スケジュール管理</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>広告運用サポート</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>LP制作・動画制作</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>カスタマイズ対応</li>
+        </ul>
+        <div class="plan-init">初期費用 <b>10万円</b>（AI運用環境構築・アカウント/競合分析・運用方針設計・KPI設計 込み）</div>
+        <a href="https://forms.gle/dRZX3NGkfNPU4LZD9" target="_blank" rel="noopener" class="btn">このプランで相談</a>
+      </div>
+    </div>
+
+    <!-- common initial setup -->
+    <div class="common reveal">
+      <div class="ci"><span>全プラン共通</span>初期構築 10万円に含まれる内容</div>
+      <div class="common-items">
+        <div class="common-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>AI運用環境構築</div>
+        <div class="common-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>アカウント・競合分析</div>
+        <div class="common-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>運用方針設計</div>
+        <div class="common-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>KPI・投稿設計</div>
+      </div>
+    </div>
+    <p class="pricing-note">※ 価格は税別です。契約期間は3ヶ月単位・以降3ヶ月更新となります。</p>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="band" id="flow">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" style="justify-content:center">How it works</span>
+      <h2>ご相談から運用開始まで、最短2週間。</h2>
+    </div>
+    <div class="flow">
+      <div class="flow-card reveal"><div class="st">STEP 01</div><h4>無料相談</h4><p>現状の課題・目的をヒアリング。まずは気軽にご相談ください。</p></div>
+      <div class="flow-card reveal"><div class="st">STEP 02</div><h4>分析・方針設計</h4><p>アカウント・競合を分析し、KPIと運用方針を設計します。</p></div>
+      <div class="flow-card reveal"><div class="st">STEP 03</div><h4>運用開始</h4><p>ポスト作成・投稿・リプライ対応をスタート。質と量を両立。</p></div>
+      <div class="flow-card reveal"><div class="st">STEP 04</div><h4>分析・改善</h4><p>データをもとにPDCAを回し、継続的に成果を最大化します。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" id="contact">
+  <div class="wrap">
+    <span class="final-kicker reveal">𝕏 顧問 / 運用代行サービス</span>
+    <div class="reveal">
+      <div class="final-lead">クライアント実績は</div>
+      <h2 class="final-serif">面談でお見せします</h2>
+    </div>
+    <div class="final-sub reveal">業種・目的に合わせた戦略で、確かな成果を創出</div>
+
+    <div class="trust reveal">
+      <div class="trust-item">
+        <div class="trust-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h4>守秘義務を徹底</h4>
+        <p>クライアント様との信頼関係を最優先にしています。</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 3 4-6"/><path d="M17 8h3v3"/></svg></div>
+        <h4>豊富な運用実績</h4>
+        <p>アカウントの成長・収益化を多数サポートしてきました。</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h4>完全オーダーメイド戦略</h4>
+        <p>アカウントの特性に合わせた最適な運用を設計します。</p>
+      </div>
+    </div>
+
+    <p class="reveal" style="color:#b8c6d8;font-size:.95rem;margin-bottom:38px">
+      面談では、<b style="color:#e6c268">具体的なデータ分析＆反映の手法</b>や、実際の<b style="color:#e6c268">運用スタイル</b>まで、包み隠さずお見せします。
+    </p>
+
+    <a class="meeting-banner reveal" href="https://forms.gle/dRZX3NGkfNPU4LZD9" target="_blank" rel="noopener">
+      <div class="mb-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+      <div class="mb-text">
+        <div class="mb-small">まずはお気軽にご相談ください</div>
+        <div class="mb-big"><em>無料面談</em>で、あなたのアカウントの可能性を広げます</div>
+      </div>
+      <div class="mb-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand"><span class="x-mark" style="width:30px;height:30px;font-size:1rem">𝕏</span>X運用パートナー</div>
+    </div>
+    <p class="foot-note">
+      ※ 掲載している数値・実績はすべて実際のアカウント実績です。成果を保証するものではありません。<br>
+      ※ 価格は税別です。契約期間は3ヶ月単位・以降3ヶ月更新となります。<br>
+      © 2026 X運用パートナー. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.14});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // count up
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function fmt(n, decimals, comma){
+    let v = decimals ? n.toFixed(decimals) : Math.round(n).toString();
+    if(comma){ const parts = v.split('.'); parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,','); v=parts.join('.'); }
+    return v;
+  }
+  function runCount(el){
+    const target = parseFloat(el.dataset.count);
+    const decimals = el.dataset.decimals ? parseInt(el.dataset.decimals):0;
+    const comma = el.dataset.comma === '1';
+    if(reduce){ el.textContent = fmt(target,decimals,comma); return; }
+    const dur = 1400; const start = performance.now();
+    function tick(now){
+      const p = Math.min((now-start)/dur,1);
+      const eased = 1-Math.pow(1-p,3);
+      el.textContent = fmt(target*eased, decimals, comma);
+      if(p<1) requestAnimationFrame(tick); else el.textContent = fmt(target,decimals,comma);
+    }
+    requestAnimationFrame(tick);
+  }
+  const cio = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ runCount(e.target); cio.unobserve(e.target);} });
+  },{threshold:.6});
+  document.querySelectorAll('.num[data-count]').forEach(el=>cio.observe(el));
+</script>
+</body>
+</html>
