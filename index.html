@@ -80,14 +80,47 @@
   /* hero */
   .hero{position:relative;overflow:hidden}
   .hero::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(216,184,92,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(216,184,92,.05) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(900px 520px at 72% 24%,#000,transparent 78%)}
-  .hero .wrap{position:relative;z-index:2;padding:104px 26px 108px}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
-  .hero h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.28;letter-spacing:.02em;color:var(--ink)}
-  .hero h1 .hl{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .hero .lead{margin-top:26px;font-size:1.05rem;color:var(--text);max-width:33em}
+  .hero .wrap{position:relative;z-index:2;padding:56px 22px 64px}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:38px;align-items:center}
+
+  /* headline: chunks never break mid-word; line count adapts to viewport */
+  .hero-title{
+    font-family:"Shippori Mincho",serif;font-weight:800;color:var(--ink);
+    font-size:clamp(1.95rem,8.4vw,2.9rem);line-height:1.34;letter-spacing:.02em;
+    word-break:keep-all;overflow-wrap:break-word;
+  }
+  .hero-title .ht-line{display:block}
+  .hero-title .ht-w{display:inline-block}
+  .hero-title .hl{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+  .hero .lead{margin-top:20px;font-size:.97rem;color:var(--text);max-width:34em}
   .hero .lead b{color:var(--gold-2);font-weight:700}
-  .hero-cta{display:flex;gap:15px;margin-top:38px;flex-wrap:wrap}
-  .hero-note{margin-top:22px;font-size:.78rem;color:var(--muted)}
+  .hero-cta{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+  .hero-cta .btn{width:100%;max-width:340px}
+  .hero-note{margin-top:18px;font-size:.75rem;color:var(--muted)}
+
+  /* tablet: still stacked, but roomier */
+  @media(min-width:600px){
+    .hero .wrap{padding:76px 26px 84px}
+    .hero-title{font-size:clamp(2.6rem,5.6vw,3.4rem);line-height:1.3}
+    .hero .lead{margin-top:24px;font-size:1.02rem}
+    .hero-cta .btn{width:auto;max-width:none}
+    .hero-note{margin-top:20px;font-size:.78rem}
+  }
+
+  /* desktop: two columns, headline guaranteed 2 lines */
+  @media(min-width:901px){
+    .hero .wrap{padding:96px 26px 104px}
+    .hero-grid{grid-template-columns:1.12fr .88fr;gap:52px}
+    .hero-title{font-size:clamp(2.5rem,3.7vw,3.25rem);line-height:1.28}
+    .hero-title .ht-w{white-space:nowrap}
+    .hero .lead{margin-top:26px;font-size:1.05rem;max-width:33em}
+    .hero-cta{margin-top:36px}
+    .hero-note{margin-top:22px}
+  }
+  @media(min-width:1200px){
+    .hero-grid{gap:60px}
+  }
 
   /* glass proof card */
   .glass{position:relative;border-radius:16px;padding:2px;background:linear-gradient(150deg,var(--gold-line),transparent 45%,transparent 60%,var(--gold-line))}
@@ -269,7 +302,6 @@
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
   @media(max-width:900px){
-    .hero-grid{grid-template-columns:1fr;gap:44px}
     .viral,.plans,.flow{grid-template-columns:1fr}
     .band{padding:74px 0}
     .plan.feat{transform:none}.plan.feat:hover{transform:translateY(-5px)}
@@ -293,7 +325,10 @@
   <div class="wrap">
     <div class="hero-grid">
       <div class="reveal in">
-        <h1>あなたのブランドに、<br><span class="hl serif">さらなる箔を。</span></h1>
+        <h1 class="hero-title">
+          <span class="ht-line"><span class="ht-w">あなたの</span><span class="ht-w">ブランドに、</span></span>
+          <span class="ht-line hl serif"><span class="ht-w">さらなる箔を。</span></span>
+        </h1>
         <p class="lead">企画・執筆・投稿・リプライ・分析まで一気通貫で代行。実際のアカウントで<b>3ヶ月・フォロワー+10,000人</b>、<b>累計3億インプレッション</b>を生み出した運用ノウハウで、あなたのアカウントに“箔”をつけます。</p>
         <div class="hero-cta">
           <a href="https://forms.gle/dRZX3NGkfNPU4LZD9" target="_blank" rel="noopener" class="btn btn-gold">
